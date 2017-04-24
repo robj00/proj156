@@ -10,22 +10,26 @@
 <body>
 <nav class="container">
 	<p class="atitle"> Greg's List</p>
-	<a href="https://yahoo.com">Post</a>
-	<a href="https://yahoo.com">Account</a>
+	<div class="alinks">
+		<a href="https://yahoo.com">Post</a>
+		<a href="https://yahoo.com">Account</a>
+	</div>
 </nav>
 
 <main>
 	<form>
 		<label>Search Jobs</label>
-		<Input placeholder="Search software jobs" type="search">
-		</Input>
-		<img src="image/magnifying-glass.png" alt="magnifying glass pic" class="logo">
+		<div class="input-wrapper">
+			<input placeholder="Search software jobs" type="search"/>	
+			<!-- we will make this a submit button or input submit later -->	
+			<img src="image/magnifying-glass.png" alt="magnifying glass pic" class="logo">
+		</div>
 	</form>
-	<div>
-		<nav>< prev </nav>
+	<nav class="searchnav">
+		<a>< prev </a>
 		<p>1 to 100 of 179</p>
-		<nav> next > </nav>
-	</div>
+		<a> next > </a>
+	</nav>
 	<div class="searchresults">
 		<div>
 			<p>June 22</p>
@@ -43,7 +47,6 @@
 			<p>Flatiron</p>
 		</div>
 	</div>
-
 </main>
 
 </body>

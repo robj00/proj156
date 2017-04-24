@@ -1,15 +1,19 @@
+* {
+	box-sizing: border-box;
+}
+
 body {
 	font-family: helvetica;
 }
 
 .container {
 	background-color: lightgrey;
-	position: fixed;
+	/*position: fixed;*/
 	width: 100%;
 	height: 30px;
 	padding-left: 20px;
 	padding-right: 20px;
-	padding-top: 8px;
+	padding-top: 3px;
 }
 
 .atitle{
@@ -19,16 +23,41 @@ body {
 	
 }
 
-nav a {
+.input-wrapper {
+	display: flex;
+	margin-top: 10px;
+}
+
+input {
+	width: 400px;
+	/*border-radius: 3px;*/
+}
+
+.alinks {
+	display: inline-block;
+	position: relative;
+	float: right;
+}
+
+.alinks a {
+	position: relative;
 	text-decoration: none;
 	color: purple;
-	text-align: right;
-
+	padding-left: 10px;
 }
 
 
-.logo {
+main {
+	margin-left: 110px;
+}
+
+label {
 	margin-top: 50px;
+	display: block;
+	font-weight: bold;
+}
+
+.logo {
 	height: 25px;
 	width: 25px;
 	border: 1px solid lightgrey;
@@ -36,8 +65,38 @@ nav a {
 
 }
 
+.searchnav {
+	margin-top: 30px;
+}
+
+.searchnav a {
+	border: 1px solid lightgrey;
+	padding: 8px;
+	margin: 0px;
+	border-radius: 3px;
+}
+.searchnav p {
+	display: inline;
+	margin: 0;
+	border: 1px solid lightgrey;
+	padding: 8px 20px 8px 20px;
+	
+}
 
 .jobtitle {
 	text-decoration: none;
 	color: blue;
+}
+.searchresults  {
+	margin-top: 30px;
+}
+
+.searchresults p {
+	color: grey;
+	display: inline;
+}
+
+.searchresults div {
+	margin-top: 10px;
+	margin-bottom: 10px;
 }
